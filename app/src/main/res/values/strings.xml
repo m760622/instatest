@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">instatest</string>
+    <string name="app_name">Instakill FB</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_picture">TAKE PICTURE</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">Unknown error</string>
 </resources>
