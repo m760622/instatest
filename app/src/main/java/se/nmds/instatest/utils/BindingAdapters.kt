@@ -13,8 +13,6 @@ fun setImageUrl(view: ImageView, url: String) {
     Glide.with(view.context).load(url).into(view)
 }
 
-
-
 val sfd = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
 val dateStr = sfd.format(Timestamp.now().toDate())
 
