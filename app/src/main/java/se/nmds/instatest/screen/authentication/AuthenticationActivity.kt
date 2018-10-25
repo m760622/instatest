@@ -10,10 +10,10 @@ import com.firebase.ui.auth.ErrorCodes
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import se.nmds.instatest.R
 import se.nmds.instatest.screen.dashboard.DashboardActivity
 import se.nmds.instatest.utils.showSnackbar
 import kotlinx.android.synthetic.main.authentication_activity.*
-import se.nmds.instatest.R
 import java.util.*
 
 class AuthenticationActivity : AppCompatActivity() {
