@@ -33,6 +33,7 @@ class CameraFragment : Fragment() {
         binding.viewModel = viewModel
         binding.executePendingBindings()
 
+
         viewModel.takePicture.observe(this, Observer {
             if (it !== null && it) {
                 binding.camera.capturePicture()
