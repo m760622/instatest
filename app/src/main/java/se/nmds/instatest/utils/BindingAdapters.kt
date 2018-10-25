@@ -21,6 +21,8 @@ fun setTimestamp(view: TextView, value: Timestamp?) {
     value?.let {
         val sfd = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
         view.text = sfd.format(value.toDate())
+
+        println(sfd.format(value.toDate()))
     }
 }
 
