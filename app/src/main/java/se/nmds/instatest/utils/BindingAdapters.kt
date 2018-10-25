@@ -17,13 +17,22 @@ val sfd = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
 val dateStr = sfd.format(Timestamp.now().toDate())
 
 @BindingAdapter("textTimestamp")
+fun setTimestamp(view: TextView, value: Timestamp?) {
+    value?.let {
+        val sfd = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
+        view.text = sfd.format(value.toDate())
+    }
+}
+
+
+/*
+
+@BindingAdapter("textTimestamp")
 fun setTimestamp(view: TextView, value: Timestamp) {
   val sfd = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
   view.text = sfd.format(value.toDate())
 }
 
-
-/*
 @BindingAdapter("textTimestamp")
 fun setTimestamp(view: TextView, value: Timestamp) {
     view.text = value.toString()
